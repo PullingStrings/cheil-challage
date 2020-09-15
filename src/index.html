@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('partials/head.html')
+</head>
+
+<body>
+<!-- navbar -->
+<div class="navigation">
+  <div class="container">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#sectionTwo">Size</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#smartTv">Smart Tv</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sectionTwo">Choose yours</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- video -->
+<div class="video-section">
+  <div class="container">
+    <div class="embed-responsive embed-responsive-16by9">
+      <video id="video" playsinline onloadeddata="this.play();" autoplay="autoplay" type="video/mp4" class="embed-responsive-item" poster="./img/QLED8K-mobile-desktop.png">
+        <source src="./img/QLED8K-desktop.mp4"
+             type="video/mp4">
+             Sorry, your browser doesn't support embedded videos.
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- ratings -->
+
+<div class="ratings-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="my-slider row">
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <div id="stars"></div>
+              </div>
+              <p>'A technological masterpiece'</p>
+              <img class="mx-auto d-block" src="./img/t3-platinum-logo.png" alt="t3-platinum-logo">
+            </div>
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <div id="rating"></div>
+              </div>
+              <p>'Nothing short of spectacular'</p>
+              <img class="mx-auto d-block" src="./img/trusted-reviews-logo.png" alt="trusted-reviews-logo">
+            </div>
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <div id="star-rating"></div>
+              </div>
+              <p>'A contender for the best TV'</p>
+              <img class="mx-auto d-block" src="./img/tech-radar-logo.png" alt="tech-rader-logo">
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- section two select size -->
+<section id="sectionTwo">
+  <div class="section-two">
+    <div class="container">
+      <h2>Select a size</h2>
+      <p>From 55" to 98", there's a QLED 8K TV for your space or budget</p>
+    </div>
+    <div class="container">
+      <div class="row no-gutters align-items-center justify-content-center">
+        <div class="col-1">
+          <img onmouseover="this.src='./img/55-hover.png'" onmouseout="this.src='./img/55-grey.png'"  src="./img/55-grey.png" class="img-fluid" alt="55-inch-screen">
+        </div>
+        <div class="col-2 75-grey">
+          <img onmouseover="this.src='./img/75-hover.png'" onmouseout="this.src='./img/75-grey.png'" class="img-fluid" src="./img/75-grey.png" alt="75-inch-screen">
+        </div>
+        <div class="col-4">
+          <img class="img-fluid" src="./img/98-range.png" alt="98-inch-main-screen">
+        </div>
+        <div class="col-2 82-grey">
+          <img onmouseover="this.src='./img/82-hover.png'" onmouseout="this.src='./img/82-grey.png'" class="img-fluid" src="./img/82-grey.png" alt="82-inch-screen">
+        </div>
+        <div class="col-1 55-grey">
+          <img onmouseover="this.src='./img/55-hover.png'" onmouseout="this.src='./img/55-grey.png'" class="img-fluid" src="./img/55-grey.png" alt="82-inch-screen">
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-light">Choose yours</button>
+    </div>
+  </div>
+</section>
+
+<!-- 3rd section -->
+<section id=smartTv>
+  <div class="section-three">
+    <div class="container">
+      <h3>smart tv</h3>
+      <h2>The bestselling TV with the best Smart apps*</h2>
+      <p>QLED 8K makes everhting easier. it gives you simple access to the largest collection of catch up content on a Smart TV. Only the No 1 selling TV brand** can give you great content from the Apple TV app, BTSport and NOW TV, without the need to plug in additional boxes or streaming sticks </p>
+
+      <p>We even give you access to the largest collection of 4K content, including Apple TV+, Netflix, Amazon Prime and Rakuten TV. And with all the catch up apps you expect in on place, you can dive into your favourite shows at the same touch of a button***</p>
+    </div>
+  </div>
+</section>
+
+<section id=brands-background>
+  <div class="container">
+    <ul class="nav nav-pills d-flex flex-nowrap justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-tab" data-toggle="tab" href="#apple" role="tab" aria-controls="pills-apple" aria-selected="true"><img class="img-fluid" onclick="changeImage()" id="apple-tv-icon" src="./img/apple-tab-active.png" alt="apple-tv-icon"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-tab" data-toggle="tab" href="#btsport" role="tab" aria-controls="pills-btsport" aria-selected="false"><img class="img-fluid" onclick="changeBTImage()" id="bt-tab-grey" src="./img/bt-tab-grey.png" alt="bt-tab-grey"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-tab" data-toggle="tab" href="#rakuten" role="tab" aria-controls="pills-rakuten" aria-selected="false"><img class="img-fluid" onclick="changeRakutenImage()" id="rakuten-tab-grey" src="./img/rakuten-tab-grey.png" alt="rakuten-tab-grey"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-tab" data-toggle="tab" href="#xbox" role="tab" aria-controls="pills-xbox" aria-selected="false"><img class="img-fluid" onclick="changeXboxImage()" id="xbox-tab-grey" src="./img/xbox-tab-grey.png" alt="xbox-tab-grey"></a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="apple" role="tabpanel" aria-labelledby="pills-apple-tab"><div class="container small-sliver-screen">
+        <div id="scene">
+          <img img-fluid id="apple-tv-scene-logo" src="./img/apple-scene-logo.png" alt="apple-scene-logo">
+          <img id="apple-character" src="./img/apple-character.png" alt="apple-character">
+        </div>
+      </div>
+    </div>
+      <div class="tab-pane fade" id="btsport" role="tabpanel" aria-labelledby="pills-bt-tab">
+        <div class="container small-sliver-screen">
+        <div id="btscene">
+          <img img-fluid id="bt-scene-logo" src="./img/bt-scene-logo.png" alt="bt-scene-logo">
+          <img id="bt-character" src="./img/bt-character.png" alt="bt-character">
+        </div>
+      </div>
+    </div>
+      <div class="tab-pane fade" id="rakuten" role="tabpanel" aria-labelledby="pills-rakuten-tab">
+        <div class="container small-sliver-screen">
+          <div id="rakscene">
+            <img img-fluid id="rakuten-scene-logo" src="./img/rakuten-scene-logo.png" alt="rakuten-scene-logo">
+            <img id="rakuten-character" src="./img/rakuten-character.png" alt="rakuten-character">
+          </div>
+    </div>
+  </div>
+      <div class="tab-pane fade" id="xbox" role="tabpanel" aria-labelledby="pills-xbox-tab">
+        <div class="container small-sliver-screen">
+          <div id="xboxscene">
+            <img img-fluid id="xbox-scene-logo" src="./img/xbox-scene-logo.png" alt="xbox-scene-logo">
+            <img id="xbox-character" src="./img/xbox-character.png" alt="xbox-character">
+          </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="js/main.js" inline></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

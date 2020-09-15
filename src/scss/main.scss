@@ -1,0 +1,185 @@
+@import '../../node_modules/destyle.css/destyle';
+@import 'variables';
+
+
+body {
+  background-color: $black !important;
+  font-family: Verdana,Geneva,sans-serif;
+}
+
+//navbar
+.navigation {
+  background-color: #222222;
+  .nav-item {
+    margin: 5px;
+  }
+   .nav-item:hover {
+     border-radius: 30px;
+     background-color: #182e9f;
+     margin: 5px;
+   }
+   .nav-link {
+     color: #ffffff;
+     text-transform: uppercase;
+     font-weight: bold;
+     font-size: 12px;
+     padding: 10px 40px;
+   }
+}
+
+//ratings section
+.ratings-section {
+  p {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+  }
+  .d-flex {
+    img {
+      width: 30px;
+      padding: 5px;
+    }
+  }
+  button {
+    display: none;
+  }
+  .my-slider {
+    justify-content: center;
+  }
+}
+
+//section-two
+
+.section-two {
+  padding: 20px 0px;
+ h2, p {
+   color: $white;
+   text-align: center;
+ }
+ button {
+   border-radius: 20px;
+   padding: 10px 45px;
+   margin: 10px;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 12px;
+ }
+ img {
+   padding: 2px;
+ }
+
+}
+
+//section three
+
+.section-three {
+  h3 {
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  h2 {
+    color: $white;
+    text-align: center;
+  }
+  p {
+    color: $white;
+    text-align: center;
+    font-size: 15px;
+  }
+
+}
+
+#brands-background {
+  background-image: url('../img/apple-background.jpg');
+  background-size: cover;
+  padding: 6em;
+  .nav-link {
+    background-color: #ff000000 !important;
+    padding: 5px !important;
+     img {
+       cursor: pointer;
+       padding: 10px 5px;
+     }
+    }
+   .container {
+     padding-left: 5px !important;
+     padding-right: 5px !important;
+   }
+
+}
+.small-sliver-screen {
+  background-image: url('../img/all-scenes-background-tv.png');
+  background-size: cover;
+  padding: 5px 0px;
+  img {
+    // width: 100%;
+  }
+  #apple-character, #bt-character, #rakuten-character, #xbox-character {
+    width: 70%;
+    float: right;
+  }
+  #scene, #btscene, #rakscene, #xboxscene {
+    background-image: url('../img/apple-scene.jpg');
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+  }
+  #apple-tv-scene-logo, #bt-scene-logo, #rakuten-scene-logo, #xbox-scene-logo {
+    width: 15%;
+    position: relative;
+    right: 0;
+    left: 80%;
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navigation {
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+    width: 100%;
+    background-color: #ffffff !important;
+    .nav-item {
+      background-color: #ffffff !important;
+      border-radius: none !important;
+    }
+    .nav-item:last-child {
+      display: none;
+    }
+    .nav-link {
+      color: $black !important;
+      padding: 10px 15px;
+      font-weight: 400;
+    }
+  }
+  #tns1 {
+    width: calc(280%);
+  }
+  .tns-outer {
+    width: 100%;
+  }
+  #brands-background {
+    padding: 1em !important;
+  }
+  .video-section {
+    margin-top: 5em;
+  }
+
+}
+@media screen and (min-width: 1440px ) {
+  .section-three {
+    p {
+      margin: 0em 5em;
+    }
+  }
+  #brands-background {
+    padding: 10em !important;
+  }
+  #apple-tv-scene-logo {
+    padding: 5px;
+  }
+}
